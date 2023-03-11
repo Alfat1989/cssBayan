@@ -1,6 +1,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding: 15px 0;
 }
 @media (min-width: 320px) {
   .container {
@@ -36,12 +37,23 @@ ul, li, p {
   position: relative;
   font-weight: 600;
   font-family: Roboto, sans-serif;
+  font-size: 16px;
   color: blue;
   cursor: pointer;
   transition: background 1s ease-out;
 }
 .accordion__list:hover .accordion__label {
   color: black;
+}
+@media (min-width: 820px) {
+  .accordion__label {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .accordion__label {
+    font-size: 20px;
+  }
 }
 
 .accordion__span {
